@@ -1,3 +1,4 @@
+# Name: Kendra Repo
 # Use https://www.si.umich.edu/programs/bachelor-science-
 # information/bsi-admissions as a template.
 # STEPS 
