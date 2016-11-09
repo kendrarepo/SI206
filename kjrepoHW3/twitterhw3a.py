@@ -4,8 +4,6 @@
 
 # You will demo this live for grading.
 
-# print("""No output necessary although you can print out a success/failure message if you want to.""")
-
 import tweepy 
 
 # Unique code from Twitter
@@ -24,4 +22,4 @@ try:
 	api.update_with_media(filename = "umsi.jpeg", status = 'This post is for a project in my programming class #UMSI206 #Proj3')
 	print("Image was successfully posted on Twitter")
 except:
-	print("Image was not successfully posted to Twitter")
+	print("Something went wrong. The image was not successfully posted to Twitter.")

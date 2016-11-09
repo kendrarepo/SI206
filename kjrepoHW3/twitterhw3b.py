@@ -6,6 +6,7 @@
 # 3) Print the average polarity of the results
 
 # Be prepared to change the search term during demo.
+
 import tweepy
 from textblob import TextBlob
 
@@ -29,13 +30,15 @@ polarity = 0.0
 
 for tweet in public_tweets:
 	results += 1
-	print(tweet.text)
+	print(tweet.text + "\n")
 	analysis = TextBlob(tweet.text)
 	subjectivity += analysis.subjectivity
 	polarity += analysis.polarity
 
-ave_subjectivity = subjectivity/results
-ave_polarity = polarity/results
-
-print("Average subjectivity is: " + str(ave_subjectivity))
-print("Average polarity is: " + str(ave_polarity))
+try:
+	ave_subjectivity = subjectivity/results
+	ave_polarity = polarity/results
+	print("\nAverage subjectivity is: " + str(ave_subjectivity))
+	print("Average polarity is: " + str(ave_polarity) + "\n")
+except:
+	print("It appears that there are no tweets with that term. Try searching for another term!")
