@@ -20,4 +20,8 @@ auth.set_access_token(access_token,access_token_secret)
 
 api = tweepy.API(auth) # Now we can Create Tweets, Delete Tweets, and Find Twitter Users
 
-proj3status = api.update_with_media(filename = "umsi.jpeg", status = 'This post is for a project in my programming class #UMSI206 #Proj3')
+try:
+	api.update_with_media(filename = "umsi.jpeg", status = 'This post is for a project in my programming class #UMSI206 #Proj3')
+	print("Image was successfully posted on Twitter")
+except:
+	print("Image was not successfully posted to Twitter")
