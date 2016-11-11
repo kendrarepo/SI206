@@ -12,8 +12,7 @@ access_token_secret = "5gkkFlPFdtKbnHsVIxTfnbSwzoPa2bnIVbNg2Dr9yrpEF"
 consumer_key = "LDHNJnUom7eodTDkw19kt34H3"
 consumer_secret = "bnaVcIwvy1XE1ZnlFBrBiip7Gy1zR8wgtfNtvctt1nAEXdLdEW"
 
-# Boilerplate code here
-auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
+auth = tweepy.OAuthHandler(consumer_key,consumer_secret) # Boilerplate code here
 auth.set_access_token(access_token,access_token_secret)
 
 api = tweepy.API(auth) # Now we can Create Tweets, Delete Tweets, and Find Twitter Users
