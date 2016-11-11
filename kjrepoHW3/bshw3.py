@@ -14,7 +14,6 @@
 
 import urllib.request, urllib.parse, urllib.error
 import requests
-import re
 from bs4 import BeautifulSoup
 
 file = open('newpage.html', 'w')
