@@ -28,4 +28,3 @@ for student in find_student:
     student.replace_with(new_text)
 
 # Part 2
-
