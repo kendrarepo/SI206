@@ -11,6 +11,7 @@
 # Deliverables:
 # 1) Print the orginal text (150 tokens)
 # 1) Print the new text
+
 print("\nSTART*******\n")
 
 import nltk
@@ -28,10 +29,7 @@ print (original_150_formatted)
 print ('\n')
 
 tokens = nltk.word_tokenize(original_150_formatted) # Divides string into lists of substrings
-# print (tokens)
-# print(" ".join(tokens))
 tagged_tokens = nltk.pos_tag(tokens) # Tagged list of tuples
-# print (tagged_tokens)
 
 if debug:
 	print ("First few tagged tokens are:")
@@ -58,6 +56,4 @@ for (word, tag) in tagged_tokens:
 
 print ("\nNew text: \n")
 print ("".join(final_words))
-
-
 print("\n\nEND*******")
