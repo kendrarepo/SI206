@@ -19,7 +19,7 @@ import random
 from nltk.book import *
 from nltk import word_tokenize,sent_tokenize
 
-debug = False # True
+# debug = False # True
 
 original_150 = text2[:150] 
 original_150_formatted = ' '.join(original_150) # First 150 tokens in a readable format
@@ -31,10 +31,10 @@ print ('\n')
 tokens = nltk.word_tokenize(original_150_formatted) # Divides string into lists of substrings
 tagged_tokens = nltk.pos_tag(tokens) # Tagged list of tuples
 
-if debug:
-	print ("First few tagged tokens are:")
-	for tup in tagged_tokens[:5]:
-		print (tup)
+# if debug:
+# 	print ("First few tagged tokens are:")
+# 	for tup in tagged_tokens[:5]:
+# 		print (tup)
 
 tagmap = {"NN":"a noun","NNS":"a plural noun","VB":"a verb","JJ":"an adjective","AV":"an adverb"}
 substitution_probabilities = {"NN":.15,"NNS":.1,"VB":.1,"JJ":.1,"AV":.1}
